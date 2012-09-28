@@ -18,6 +18,12 @@
 
 	<meta charset='utf-8'>
 	<script src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>
+
+	<style>
+		img.centered {
+			max-width: 100%;
+		}
+	</style>
 </head>
 
 <body style='display: none'>
@@ -40,7 +46,7 @@
 		{{/primary_text}}
 
 		{{#image}}
-		<img src="images/{{image}}" class="centered"/>
+		<img src="../assets/{{image}}" class="centered"/>
 		{{/image}}
 
 		{{#code}}
