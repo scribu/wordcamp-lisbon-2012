@@ -8,6 +8,11 @@
 		},
 
 		{
+			"class": "contrib",
+			"image": "contributors.png"
+		},
+
+		{
 			"class": "logo",
 			"image": "AppThemes-1200.png"
 		},
@@ -16,6 +21,11 @@
 			"slide_title": "Title of the Slide",
 			"code": "code.js",
 			"secondary_text": "This explains the code block"
+		},
+
+		{
+			"slide_title": "Contact",
+			"secondary_text": "Twitter: @scribu"
 		}
 	]
 }
