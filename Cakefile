@@ -5,7 +5,7 @@ mustache = require('mustache')
 
 prepare_slide = (slide) ->
 	for own key, value of slide
-		if key in 'list'
+		if key in ['list', 'class']
 			continue
 
 		if key is 'code'
@@ -17,6 +17,8 @@ prepare_slide = (slide) ->
 	null
 
 task 'watch', 'Continuously generate the slides', (options) ->
+	invoke 'build'
+
 	watch.createMonitor '.', (monitor) ->
 		monitor.on "changed", (f, curr, prev) ->
 			if f in ['template.html', 'slides.json']
