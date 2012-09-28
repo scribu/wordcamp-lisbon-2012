@@ -1,5 +1,6 @@
 fs = require('fs')
 mkdirp = require('mkdirp').sync
+watch = require('watch')
 mustache = require('mustache')
 
 prepare_slide = (slide) ->
@@ -14,6 +15,13 @@ prepare_slide = (slide) ->
 		slide[key][key] = value
 
 	null
+
+task 'watch', 'Continuously generate the slides', (options) ->
+	watch.createMonitor '.', (monitor) ->
+		monitor.on "changed", (f, curr, prev) ->
+			if f in ['template.html', 'slides.json']
+				console.log f + ' changed'
+				invoke 'build'
 
 task 'build', 'Generate the slides', (options) ->
 	mkdirp 'slides'
