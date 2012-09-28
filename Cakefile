@@ -12,7 +12,10 @@ prepare_slide = (slide) ->
 			continue
 
 		if key is 'code'
-			value = fs.readFileSync value, 'utf8'
+			try
+				value = fs.readFileSync value, 'utf8'
+			catch err
+				console.log err.stack
 
 		slide[key] = {}
 		slide[key][key] = value
