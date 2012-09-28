@@ -19,3 +19,7 @@ cake build
 # View slides
 firefox slides/index.html
 ```
+
+## Credits
+
+* http://laktek.com/2012/04/27/create-quick-html5-presentations-with-punch/
