@@ -1,0 +1,11 @@
+{ "slides": [
+	{
+		"slogan": "Main Title of Presentation"
+	},
+
+	{
+		"slide_title": "Title of the Slide",
+		"code": "code.js",
+		"secondary_text": "This explains the code block"
+	}
+]}

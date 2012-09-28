@@ -1,0 +1,8 @@
+{
+	"name": "slides",
+	"version": "0.0.0",
+	"dependencies": {
+		"handlebars" : ">=1.0.0",
+		"mkdirp"     : ">=0.3.0"
+	}
+}
