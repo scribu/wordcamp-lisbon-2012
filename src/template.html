@@ -34,6 +34,12 @@
 			max-width: 75%;
 			left: 12.5%;
 		}
+
+		#favicon {
+			position: absolute;
+			bottom: 16px;
+			right: 16px;
+		}
 	</style>
 </head>
 
@@ -84,7 +90,7 @@
 		<p class="source">{{{footnote}}}</p>
 		{{/footnote}}
 
-		{{> slide_footer }}
+		<img id="favicon" src="../assets/favicon.ico" />
 
 	</article>
 	{{/slides}}
