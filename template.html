@@ -1,9 +1,70 @@
-{{#slides}}
-<article class="{{class}}">
+<!DOCTYPE html>
 
-	<h2>{{slogan}}</h2>
+<!--
+  Google HTML5 slide template
 
-	<pre>{{code}}</pre> 
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+           
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
 
-</article>
-{{/slides}}
+  URL: http://code.google.com/p/html5slides/
+-->
+
+<html>
+<head>
+	<title>{{title}}</title>
+
+	<meta charset='utf-8'>
+	<script src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>
+</head>
+
+<body style='display: none'>
+
+<section class='slides layout-widescreen template-default'>
+
+	{{#slides}}
+	<article class="{{class}}">
+
+		{{#slogan}}
+		<h1>{{{slogan}}}</h1>
+		{{/slogan}}
+
+		{{#slide_title}}
+		<h3>{{{slide_title}}}</h3>
+		{{/slide_title}}
+
+		{{#primary_text}}
+		<p class="primary">{{{primary_text}}}</p>
+		{{/primary_text}}
+
+		{{#image}}
+		<img src="images/{{image}}" class="centered"/>
+		{{/image}}
+
+		{{#code}}
+			<pre>{{code}}</pre> 
+		{{/code}}
+
+		{{#list}}
+		<ul class="build">
+			<li>{{{.}}}</li> 
+		</ul>
+		{{/list}}
+
+		{{#secondary_text}}
+		<p class="secondary">{{{secondary_text}}}</p>
+		{{/secondary_text}}
+
+		{{#footnote}}
+		<p class="source">{{{footnote}}}</p>
+		{{/footnote}}
+
+		{{> slide_footer }}
+
+	</article>
+	{{/slides}}
+</section>
+</body>
+</html>
