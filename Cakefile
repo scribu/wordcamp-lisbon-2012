@@ -31,7 +31,7 @@ task 'build', 'Generate the slides', (options) ->
 	raw_data = fs.readFileSync './src/slides.json', 'utf8'
 
 	try
-		data = JSON.parse(raw_data)
+		data = JSON.parse raw_data
 	catch err
 		console.log err.stack
 		return

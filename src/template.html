@@ -64,11 +64,17 @@
 			<pre>{{code}}</pre> 
 		{{/code}}
 
+		<ul>
 		{{#list}}
-		<ul class="build">
 			<li>{{{.}}}</li> 
-		</ul>
 		{{/list}}
+		</ul>
+
+		<ul class="build">
+		{{#buildup}}
+			<li>{{{.}}}</li> 
+		{{/buildup}}
+		</ul>
 
 		{{#secondary_text}}
 		<p class="secondary">{{{secondary_text}}}</p>

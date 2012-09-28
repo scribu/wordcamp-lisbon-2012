@@ -24,8 +24,11 @@
 		},
 
 		{
-			"slide_title": "Contact",
-			"secondary_text": "Twitter: @scribu"
+			"slide_title": "Thanks!",
+			"list": [
+				"Site: <a href='http://scribu.net'>scribu.net</a>",
+				"Twitter: <a href='http://twitter.com/scribu'>@scribu</a>"
+			]
 		}
 	]
 }
