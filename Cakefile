@@ -5,7 +5,10 @@ mustache = require('mustache')
 
 prepare_slide = (slide) ->
 	for own key, value of slide
-		if key in ['list', 'class']
+		if typeof value is 'object'
+			continue
+
+		if key is 'class'
 			continue
 
 		if key is 'code'
