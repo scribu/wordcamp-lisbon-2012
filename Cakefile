@@ -28,7 +28,13 @@ task 'watch', 'Continuously generate the slides', (options) ->
 task 'build', 'Generate the slides', (options) ->
 	mkdirp 'slides'
 
-	data = JSON.parse(fs.readFileSync './src/slides.json', 'utf8')
+	raw_data = fs.readFileSync './src/slides.json', 'utf8'
+
+	try
+		data = JSON.parse(raw_data)
+	catch err
+		console.log err.stack
+		return
 
 	for slide in data['slides']
 		prepare_slide slide
