@@ -19,21 +19,21 @@ prepare_slide = (slide) ->
 task 'watch', 'Continuously generate the slides', (options) ->
 	invoke 'build'
 
-	watch.createMonitor '.', (monitor) ->
+	watch.createMonitor './src', (monitor) ->
 		monitor.on "changed", (f, curr, prev) ->
-			if f in ['template.html', 'slides.json']
+			if f in ['src/template.html', 'src/slides.json']
 				console.log f + ' changed'
 				invoke 'build'
 
 task 'build', 'Generate the slides', (options) ->
 	mkdirp 'slides'
 
-	data = JSON.parse(fs.readFileSync 'slides.json', 'utf8')
+	data = JSON.parse(fs.readFileSync './src/slides.json', 'utf8')
 
 	for slide in data['slides']
 		prepare_slide slide
 
-	template = fs.readFileSync 'template.html', 'utf8'
+	template = fs.readFileSync './src/template.html', 'utf8'
 
 	output = mustache.render(template, data)
 
