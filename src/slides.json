@@ -8,13 +8,23 @@
 		},
 
 		{
-			"class": "contrib",
+			"class": "vcentered",
 			"image": "contributors.png"
 		},
 
 		{
-			"class": "logo",
+			"class": "vcentered logo",
 			"image": "AppThemes-1200.png"
+		},
+
+		{
+			"slide_title": "Core",
+			"image": "core.png"
+		},
+
+		{
+			"slide_title": "Admin",
+			"image": "admin.png"
 		},
 
 		{

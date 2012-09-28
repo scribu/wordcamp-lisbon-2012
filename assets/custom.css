@@ -1,14 +1,15 @@
 .slides article img.centered {
-	position: absolute;
-	top: 50%;
-	-moz-transform: translate(0px, -55%);
+	max-width: 100%;
+	max-height: 100%;
 }
 
-.slides .contrib img.centered {
-	max-width: 100%;
+.slides .vcentered img.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -55%);
 }
 
 .slides .logo img.centered {
 	max-width: 75%;
-	left: 12.5%;
 }
