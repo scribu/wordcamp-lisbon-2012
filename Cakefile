@@ -13,7 +13,7 @@ prepare_slide = (slide) ->
 
 		if key is 'code'
 			try
-				value = fs.readFileSync value, 'utf8'
+				value = fs.readFileSync './src/' + value, 'utf8'
 			catch err
 				console.log err.stack
 
@@ -27,7 +27,7 @@ task 'watch', 'Continuously generate the slides', (options) ->
 
 	watch.createMonitor './src', (monitor) ->
 		monitor.on "changed", (f, curr, prev) ->
-			if f in ['src/template.html', 'src/slides.json']
+			if f.match /^[^\.]+\.[^\.~]+$/
 				console.log f + ' changed'
 				invoke 'build'
 

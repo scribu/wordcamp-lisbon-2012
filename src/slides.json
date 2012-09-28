@@ -18,19 +18,18 @@
 		},
 
 		{
-			"slide_title": "Core",
+			"slide_title": "Core Classes",
 			"image": "core.png"
 		},
 
 		{
-			"slide_title": "Admin",
+			"slide_title": "Admin Classes",
 			"image": "admin.png"
 		},
 
 		{
-			"slide_title": "Title of the Slide",
-			"code": "code.js",
-			"secondary_text": "This explains the code block"
+			"slide_title": "Defining Connection types",
+			"code": "register_ctype.phps"
 		},
 
 		{
