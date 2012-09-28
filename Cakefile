@@ -1,9 +1,6 @@
 fs = require('fs')
 mkdirp = require('mkdirp').sync
-Handlebars = require('handlebars')
-
-Handlebars.registerHelper 'include', (path) ->
-	fs.readFileSync path, 'utf8'
+mustache = require('mustache')
 
 task 'build', 'Generate the slides', (options) ->
 	mkdirp 'slides'
@@ -14,8 +11,10 @@ task 'build', 'Generate the slides', (options) ->
 		if slide.code?
 			slide.code = fs.readFileSync slide.code, 'utf8'
 
-	template = Handlebars.compile(fs.readFileSync 'template.html', 'utf8')
+	template = fs.readFileSync 'template.html', 'utf8'
 
-	fs.writeFileSync 'slides/index.html', template(data)
+	output = mustache.render(template, data)
 
-	console.log template(data)
+	fs.writeFileSync 'slides/index.html', output
+
+	console.log output
