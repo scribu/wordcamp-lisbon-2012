@@ -1,13 +1,14 @@
 {
-	"title": "Connecting The Dots",
+	"main-title": "Connecting The Dots",
 
 	"slides": [
 		{
 			"slogan": "Connecting The Dots",
-			"primary_text": "Cristi Burcă (a.k.a. scribu)<br>Lisbon, Sep. 2012"
+			"primary_text": "Cristi Burcă<br>Lisbon, Sep. 2012"
 		},
 
 		{
+			"title": "a.k.a. scribu",
 			"class": "vcentered",
 			"image": "contributors.png"
 		},
@@ -18,22 +19,54 @@
 		},
 
 		{
-			"slide_title": "Core Classes",
+			"title": "Posts 2 Posts",
+			"buildup": [
+				"connect posts directly to other posts*",
+				"connect posts to users",
+				"many-to-many or one-to-many",
+				"connection custom fields"
+			],
+			"footnote": "* posts = posts, pages, CPTs"
+		},
+
+		{
+			"class": "vcentered",
+			"title": "P2P Admin UI",
+			"image": "screenshot-2.png"
+		},
+
+		{
+			"title": "Custom Fields",
+			"primary_text": "TODO: show DB schema"
+		},
+
+		{
+			"title": "Hidden Taxonomy",
+			"primary_text": "TODO: show DB schema"
+		},
+
+		{
+			"title": "Custom Tables",
+			"image": "schema.png"
+		},
+
+		{
+			"title": "Core Classes",
 			"image": "core.png"
 		},
 
 		{
-			"slide_title": "Admin Classes",
+			"title": "Admin Classes",
 			"image": "admin.png"
 		},
 
 		{
-			"slide_title": "Defining Connection types",
+			"title": "Defining Connection types",
 			"code": "register_ctype.phps"
 		},
 
 		{
-			"slide_title": "Thanks!",
+			"title": "Thanks!",
 			"list": [
 				"<a href='http://scribu.net'>scribu.net</a>",
 				"Github: <a href='http://github.com/scribu'>@scribu</a>",
