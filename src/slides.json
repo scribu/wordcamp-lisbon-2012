@@ -36,18 +36,27 @@
 		},
 
 		{
-			"title": "Custom Fields",
-			"primary_text": "TODO: show DB schema"
+			"slogan": "Storing the connections"
 		},
 
 		{
-			"title": "Hidden Taxonomy",
-			"primary_text": "TODO: show DB schema"
+			"title": "First try: Custom Fields",
+			"markdown": "schema1.md"
 		},
 
 		{
-			"title": "Custom Tables",
+			"title": "Second try: Hidden Taxonomy",
+			"markdown": "schema2.md"
+		},
+
+		{
+			"title": "Currently: Custom Tables",
 			"markdown": "schema4.md"
+		},
+
+		{
+			"title": "Defining Connection Types",
+			"code": "register_ctype.phps"
 		},
 
 		{
@@ -61,12 +70,6 @@
 		},
 
 		{
-			"title": "Defining Connection types",
-			"code": "register_ctype.phps"
-		},
-
-		{
-			"title": "Thanks!",
 			"markdown": "links.md"
 		}
 	]
