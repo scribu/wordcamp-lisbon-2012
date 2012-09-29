@@ -1,6 +1,18 @@
 fs = require('fs')
 watch = require('watch')
 mustache = require('mustache')
+marked = require('marked')
+
+marked.setOptions(
+	gfm: true
+	pedantic: false
+	sanitize: true
+	# highlight: (code, lang) ->
+	# 	if lang is 'js'
+	# 		return javascriptHighlighter(code)
+
+	# 	return code
+)
 
 prepare_slide = (slide) ->
 	for own key, value of slide
@@ -8,6 +20,14 @@ prepare_slide = (slide) ->
 			continue
 
 		if key is 'class'
+			continue
+
+		if key is 'markdown'
+			try
+				slide[key] = marked(fs.readFileSync './src/' + value, 'utf8')
+			catch err
+				console.log err.stack
+
 			continue
 
 		if key is 'code'
