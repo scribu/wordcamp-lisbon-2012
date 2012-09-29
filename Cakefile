@@ -18,18 +18,20 @@ prepare_slide = (slide) ->
 			continue
 
 		if key is 'markdown'
+			path = 'src/' + value
 			try
-				slide[key] = marked(fs.readFileSync './src/' + value, 'utf8')
+				slide[key] = marked(fs.readFileSync path, 'utf8')
 			catch err
-				console.log err.stack
+				console.log path + " doesn't exist"
 
 			continue
 
 		if key is 'code'
+			path = 'src/' + value
 			try
-				value = fs.readFileSync './src/' + value, 'utf8'
+				value = fs.readFileSync path, 'utf8'
 			catch err
-				console.log err.stack
+				console.log path + " doesn't exist"
 
 		slide[key] = {}
 		slide[key][key] = value
@@ -39,7 +41,7 @@ prepare_slide = (slide) ->
 task 'watch', 'Continuously generate the slides', (options) ->
 	invoke 'build'
 
-	watch.createMonitor './src', (monitor) ->
+	watch.createMonitor 'src', (monitor) ->
 		monitor.on "changed", (f, curr, prev) ->
 			if f.match /^[^\.]+\.[^\.~]+$/
 				console.log f + ' changed'
