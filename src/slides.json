@@ -14,6 +14,7 @@
 		},
 
 		{
+			"title": "I work at:",
 			"class": "vcentered logo",
 			"image": "AppThemes-1200.png"
 		},
@@ -26,7 +27,7 @@
 				"many-to-many or one-to-many",
 				"connection custom fields"
 			],
-			"footnote": "* posts = posts, pages, CPTs"
+			"footnote": "* posts = posts, pages, attachments, CPTs"
 		},
 
 		{
@@ -59,6 +60,10 @@
 		{
 			"title": "Currently: Custom Tables",
 			"markdown": "schema4.md"
+		},
+
+		{
+			"slogan": "The Plumbing"
 		},
 
 		{
