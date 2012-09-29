@@ -3,7 +3,6 @@
 	"version": "0.0.0",
 	"dependencies": {
 		"mustache" : ">=0.7.0",
-		"mkdirp"   : ">=0.3.0",
 		"watch"    : ">=0.5"
 	}
 }

@@ -1,5 +1,4 @@
 fs = require('fs')
-mkdirp = require('mkdirp').sync
 watch = require('watch')
 mustache = require('mustache')
 
@@ -32,7 +31,8 @@ task 'watch', 'Continuously generate the slides', (options) ->
 				invoke 'build'
 
 task 'build', 'Generate the slides', (options) ->
-	mkdirp 'slides'
+	if not fs.existsSync 'slides'
+		fs.mkdirSync 'slides'
 
 	raw_data = fs.readFileSync './src/slides.json', 'utf8'
 
