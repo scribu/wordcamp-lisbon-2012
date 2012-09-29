@@ -8,7 +8,7 @@ function page_contributors_ctype() {
 		'to'   => 'user',
 		'duplicate_connections' => true,
 		'fields' => array(
-			'description' => 'Description'
+			'contribution' => 'Contribution'
 		)
 	) );
 }

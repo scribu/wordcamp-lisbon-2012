@@ -34,8 +34,7 @@
 		},
 
 		{
-			"class": "vcentered",
-			"title": "P2P Admin UI",
+			"class": "fill",
 			"image": "metabox.png"
 		},
 
