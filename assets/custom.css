@@ -13,3 +13,9 @@
 .slides .logo img.centered {
 	max-width: 50%;
 }
+
+.half {
+	width: 50%;
+	float: left;
+	margin-top: 20px;
+}

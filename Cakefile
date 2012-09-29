@@ -6,12 +6,7 @@ marked = require('marked')
 marked.setOptions(
 	gfm: true
 	pedantic: false
-	sanitize: true
-	# highlight: (code, lang) ->
-	# 	if lang is 'js'
-	# 		return javascriptHighlighter(code)
-
-	# 	return code
+	sanitize: false
 )
 
 prepare_slide = (slide) ->
