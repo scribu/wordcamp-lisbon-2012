@@ -34,13 +34,13 @@
 		},
 
 		{
-			"markdown": "querying.md"
+			"class": "vcentered",
+			"title": "P2P Admin UI",
+			"image": "metabox.png"
 		},
 
 		{
-			"class": "vcentered",
-			"title": "P2P Admin UI",
-			"image": "screenshot-2.png"
+			"markdown": "querying.md"
 		},
 
 		{
