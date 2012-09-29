@@ -55,8 +55,7 @@
 		},
 
 		{
-			"title": "Defining Connection Types",
-			"code": "register_ctype.phps"
+			"markdown": "api.md"
 		},
 
 		{
