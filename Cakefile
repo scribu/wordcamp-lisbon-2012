@@ -22,7 +22,7 @@ prepare_slide = (slide) ->
 			try
 				slide[key] = marked(fs.readFileSync path, 'utf8')
 			catch err
-				console.log path + " doesn't exist"
+				console.error path + " doesn't exist"
 
 			continue
 
@@ -31,7 +31,7 @@ prepare_slide = (slide) ->
 			try
 				value = fs.readFileSync path, 'utf8'
 			catch err
-				console.log path + " doesn't exist"
+				console.error path + " doesn't exist"
 
 		slide[key] = {}
 		slide[key][key] = value
@@ -56,7 +56,7 @@ task 'build', 'Generate the slides', (options) ->
 	try
 		data = JSON.parse raw_data
 	catch err
-		console.log err.stack
+		console.error err.stack
 		return
 
 	for slide in data['slides']
