@@ -30,6 +30,14 @@
 		},
 
 		{
+			"markdown": "defining.md"
+		},
+
+		{
+			"markdown": "querying.md"
+		},
+
+		{
 			"class": "vcentered",
 			"title": "P2P Admin UI",
 			"image": "screenshot-2.png"
@@ -52,14 +60,6 @@
 		{
 			"title": "Currently: Custom Tables",
 			"markdown": "schema4.md"
-		},
-
-		{
-			"markdown": "defining.md"
-		},
-
-		{
-			"markdown": "querying.md"
 		},
 
 		{
