@@ -68,11 +68,7 @@
 
 		{
 			"title": "Thanks!",
-			"list": [
-				"<a href='http://scribu.net'>scribu.net</a>",
-				"Github: <a href='http://github.com/scribu'>@scribu</a>",
-				"Twitter: <a href='http://twitter.com/scribu'>@scribu</a>"
-			]
+			"markdown": "links.md"
 		}
 	]
 }
