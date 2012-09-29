@@ -7,7 +7,9 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	-webkit-transform: translate(-50%, -55%);
 	-moz-transform: translate(-50%, -55%);
+	-o-transform: translate(-50%, -55%);
 }
 
 .slides .logo img.centered {
@@ -17,7 +19,7 @@
 .half {
 	width: 50%;
 	float: left;
-	margin-top: 20px;
+	margin-top: 40px;
 }
 
 article ul {
