@@ -66,4 +66,4 @@ task 'build', 'Generate the slides', (options) ->
 
 	output = mustache.render(template, data)
 
-	fs.writeFileSync 'slides/index.html', output
+	fs.writeFileSync 'index.html', output

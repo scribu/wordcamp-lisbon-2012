@@ -11,7 +11,7 @@
 */
 
 // var PERMANENT_URL_PREFIX = 'http://html5slides.googlecode.com/svn/trunk/';
-var PERMANENT_URL_PREFIX = '../assets/';
+var PERMANENT_URL_PREFIX = './assets/';
 
 var SLIDE_CLASSES = ['far-past', 'past', 'current', 'next', 'far-next'];
 
