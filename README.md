@@ -17,7 +17,7 @@ npm install
 cake build
 
 # View slides
-firefox slides/index.html
+firefox index.html
 ```
 
 ## Credits
